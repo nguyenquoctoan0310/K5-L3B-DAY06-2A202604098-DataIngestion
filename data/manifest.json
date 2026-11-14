@@ -1,0 +1,933 @@
+{
+  "corpus_version": "v1",
+  "sources": [
+    {
+      "source_id": "openstax-ibn",
+      "title": "Introduction to Behavioral Neuroscience (OpenStax)",
+      "publisher": "OpenStax, Rice University",
+      "source_path_or_url": "https://openstax.org/books/introduction-behavioral-neuroscience",
+      "local_file": "starter/data/Introduction-Behavioral-Neuroscience_-_WEB.pdf",
+      "license_or_permission": "CC BY-NC-SA 4.0 (stated on PDF page 4: '©2024 Rice University. Textbook content produced by OpenStax is licensed under a Creative Commons Attribution Non-Commercial ShareAlike 4.0 International License')",
+      "usage_note": "Non-commercial educational use with attribution; PDF not committed to the repo, download it from the URL above.",
+      "accessed_at": "2026-11-14",
+      "snapshot": {
+        "pdf_creation_date": "D:20260609102908-05'00'",
+        "physical_pages_in_pdf": 913,
+        "sha256": "32af1ea701864dbde9be9c279cfe2bd10de02924f622085805c5bb80f409ff9f"
+      },
+      "page_counting_rule": "A page is counted if it is a physical PDF page inside a chapter's explanatory text (chapter opener + numbered sections). Excluded: front matter, Section Summary, Key Terms, References, Multiple Choice, Fill in the Blank. `page` = 1-based physical PDF page; `printed_page` = number printed in header/footer.",
+      "chapters": [
+        {
+          "chapter": "6",
+          "chapter_title": "Vision",
+          "pdf_page_range": "251-294",
+          "pages_counted": 44,
+          "excluded_pages": "295-302 (Section Summary, Key Terms, References, Multiple Choice, Fill in the Blank)",
+          "char_count": 97081
+        },
+        {
+          "chapter": "7",
+          "chapter_title": "Hearing and Balance",
+          "pdf_page_range": "303-338",
+          "pages_counted": 36,
+          "excluded_pages": "339-346 (Section Summary, Key Terms, References, Multiple Choice, Fill in the Blank)",
+          "char_count": 93823
+        }
+      ],
+      "total_pages_counted": 80,
+      "total_char_count": 190904,
+      "pages": [
+        {
+          "page_id": "openstax-ibn:p251",
+          "page": 251,
+          "printed_page": null,
+          "chapter": "6",
+          "section": "6.0 Introduction",
+          "sections_on_page": [
+            "6.0 Introduction"
+          ],
+          "char_count": 677
+        },
+        {
+          "page_id": "openstax-ibn:p252",
+          "page": 252,
+          "printed_page": 240,
+          "chapter": "6",
+          "section": "6.0 Introduction",
+          "sections_on_page": [
+            "6.0 Introduction",
+            "6.1 An Overview of the Visual System"
+          ],
+          "char_count": 3070
+        },
+        {
+          "page_id": "openstax-ibn:p253",
+          "page": 253,
+          "printed_page": 241,
+          "chapter": "6",
+          "section": "6.1 An Overview of the Visual System",
+          "sections_on_page": [
+            "6.1 An Overview of the Visual System"
+          ],
+          "char_count": 1793
+        },
+        {
+          "page_id": "openstax-ibn:p254",
+          "page": 254,
+          "printed_page": 242,
+          "chapter": "6",
+          "section": "6.1 An Overview of the Visual System",
+          "sections_on_page": [
+            "6.1 An Overview of the Visual System"
+          ],
+          "char_count": 1915
+        },
+        {
+          "page_id": "openstax-ibn:p255",
+          "page": 255,
+          "printed_page": 243,
+          "chapter": "6",
+          "section": "6.1 An Overview of the Visual System",
+          "sections_on_page": [
+            "6.1 An Overview of the Visual System",
+            "6.2 The Retina"
+          ],
+          "char_count": 1275
+        },
+        {
+          "page_id": "openstax-ibn:p256",
+          "page": 256,
+          "printed_page": 244,
+          "chapter": "6",
+          "section": "6.2 The Retina",
+          "sections_on_page": [
+            "6.2 The Retina"
+          ],
+          "char_count": 3165
+        },
+        {
+          "page_id": "openstax-ibn:p257",
+          "page": 257,
+          "printed_page": 245,
+          "chapter": "6",
+          "section": "6.2 The Retina",
+          "sections_on_page": [
+            "6.2 The Retina"
+          ],
+          "char_count": 1201
+        },
+        {
+          "page_id": "openstax-ibn:p258",
+          "page": 258,
+          "printed_page": 246,
+          "chapter": "6",
+          "section": "6.2 The Retina",
+          "sections_on_page": [
+            "6.2 The Retina"
+          ],
+          "char_count": 1779
+        },
+        {
+          "page_id": "openstax-ibn:p259",
+          "page": 259,
+          "printed_page": 247,
+          "chapter": "6",
+          "section": "6.2 The Retina",
+          "sections_on_page": [
+            "6.2 The Retina"
+          ],
+          "char_count": 1599
+        },
+        {
+          "page_id": "openstax-ibn:p260",
+          "page": 260,
+          "printed_page": 248,
+          "chapter": "6",
+          "section": "6.2 The Retina",
+          "sections_on_page": [
+            "6.2 The Retina"
+          ],
+          "char_count": 709
+        },
+        {
+          "page_id": "openstax-ibn:p261",
+          "page": 261,
+          "printed_page": 249,
+          "chapter": "6",
+          "section": "6.2 The Retina",
+          "sections_on_page": [
+            "6.2 The Retina"
+          ],
+          "char_count": 2742
+        },
+        {
+          "page_id": "openstax-ibn:p262",
+          "page": 262,
+          "printed_page": 250,
+          "chapter": "6",
+          "section": "6.2 The Retina",
+          "sections_on_page": [
+            "6.2 The Retina"
+          ],
+          "char_count": 1229
+        },
+        {
+          "page_id": "openstax-ibn:p263",
+          "page": 263,
+          "printed_page": 251,
+          "chapter": "6",
+          "section": "6.2 The Retina",
+          "sections_on_page": [
+            "6.2 The Retina"
+          ],
+          "char_count": 1663
+        },
+        {
+          "page_id": "openstax-ibn:p264",
+          "page": 264,
+          "printed_page": 252,
+          "chapter": "6",
+          "section": "6.2 The Retina",
+          "sections_on_page": [
+            "6.2 The Retina",
+            "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells"
+          ],
+          "char_count": 3973
+        },
+        {
+          "page_id": "openstax-ibn:p265",
+          "page": 265,
+          "printed_page": 253,
+          "chapter": "6",
+          "section": "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells",
+          "sections_on_page": [
+            "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells"
+          ],
+          "char_count": 1705
+        },
+        {
+          "page_id": "openstax-ibn:p266",
+          "page": 266,
+          "printed_page": 254,
+          "chapter": "6",
+          "section": "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells",
+          "sections_on_page": [
+            "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells"
+          ],
+          "char_count": 5039
+        },
+        {
+          "page_id": "openstax-ibn:p267",
+          "page": 267,
+          "printed_page": 255,
+          "chapter": "6",
+          "section": "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells",
+          "sections_on_page": [
+            "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells"
+          ],
+          "char_count": 2407
+        },
+        {
+          "page_id": "openstax-ibn:p268",
+          "page": 268,
+          "printed_page": 256,
+          "chapter": "6",
+          "section": "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells",
+          "sections_on_page": [
+            "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells"
+          ],
+          "char_count": 4190
+        },
+        {
+          "page_id": "openstax-ibn:p269",
+          "page": 269,
+          "printed_page": 257,
+          "chapter": "6",
+          "section": "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells",
+          "sections_on_page": [
+            "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells"
+          ],
+          "char_count": 558
+        },
+        {
+          "page_id": "openstax-ibn:p270",
+          "page": 270,
+          "printed_page": 258,
+          "chapter": "6",
+          "section": "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells",
+          "sections_on_page": [
+            "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells"
+          ],
+          "char_count": 2332
+        },
+        {
+          "page_id": "openstax-ibn:p271",
+          "page": 271,
+          "printed_page": 259,
+          "chapter": "6",
+          "section": "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells",
+          "sections_on_page": [
+            "6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells",
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 2226
+        },
+        {
+          "page_id": "openstax-ibn:p272",
+          "page": 272,
+          "printed_page": 260,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 2139
+        },
+        {
+          "page_id": "openstax-ibn:p273",
+          "page": 273,
+          "printed_page": 261,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 3186
+        },
+        {
+          "page_id": "openstax-ibn:p274",
+          "page": 274,
+          "printed_page": 262,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 3017
+        },
+        {
+          "page_id": "openstax-ibn:p275",
+          "page": 275,
+          "printed_page": 263,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 2612
+        },
+        {
+          "page_id": "openstax-ibn:p276",
+          "page": 276,
+          "printed_page": 264,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 1995
+        },
+        {
+          "page_id": "openstax-ibn:p277",
+          "page": 277,
+          "printed_page": 265,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 1281
+        },
+        {
+          "page_id": "openstax-ibn:p278",
+          "page": 278,
+          "printed_page": 266,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 2783
+        },
+        {
+          "page_id": "openstax-ibn:p279",
+          "page": 279,
+          "printed_page": 267,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 1721
+        },
+        {
+          "page_id": "openstax-ibn:p280",
+          "page": 280,
+          "printed_page": 268,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 3058
+        },
+        {
+          "page_id": "openstax-ibn:p281",
+          "page": 281,
+          "printed_page": 269,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 1579
+        },
+        {
+          "page_id": "openstax-ibn:p282",
+          "page": 282,
+          "printed_page": 270,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 1322
+        },
+        {
+          "page_id": "openstax-ibn:p283",
+          "page": 283,
+          "printed_page": 271,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 910
+        },
+        {
+          "page_id": "openstax-ibn:p284",
+          "page": 284,
+          "printed_page": 272,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 3046
+        },
+        {
+          "page_id": "openstax-ibn:p285",
+          "page": 285,
+          "printed_page": 273,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex"
+          ],
+          "char_count": 69
+        },
+        {
+          "page_id": "openstax-ibn:p286",
+          "page": 286,
+          "printed_page": 274,
+          "chapter": "6",
+          "section": "6.4 The Thalamus and Primary Visual Cortex",
+          "sections_on_page": [
+            "6.4 The Thalamus and Primary Visual Cortex",
+            "6.5 Extrastriate Cortex"
+          ],
+          "char_count": 3718
+        },
+        {
+          "page_id": "openstax-ibn:p287",
+          "page": 287,
+          "printed_page": 275,
+          "chapter": "6",
+          "section": "6.5 Extrastriate Cortex",
+          "sections_on_page": [
+            "6.5 Extrastriate Cortex"
+          ],
+          "char_count": 3099
+        },
+        {
+          "page_id": "openstax-ibn:p288",
+          "page": 288,
+          "printed_page": 276,
+          "chapter": "6",
+          "section": "6.5 Extrastriate Cortex",
+          "sections_on_page": [
+            "6.5 Extrastriate Cortex"
+          ],
+          "char_count": 2799
+        },
+        {
+          "page_id": "openstax-ibn:p289",
+          "page": 289,
+          "printed_page": 277,
+          "chapter": "6",
+          "section": "6.5 Extrastriate Cortex",
+          "sections_on_page": [
+            "6.5 Extrastriate Cortex"
+          ],
+          "char_count": 3039
+        },
+        {
+          "page_id": "openstax-ibn:p290",
+          "page": 290,
+          "printed_page": 278,
+          "chapter": "6",
+          "section": "6.5 Extrastriate Cortex",
+          "sections_on_page": [
+            "6.5 Extrastriate Cortex",
+            "6.6 Unsolved Questions In Visual Perception"
+          ],
+          "char_count": 3204
+        },
+        {
+          "page_id": "openstax-ibn:p291",
+          "page": 291,
+          "printed_page": 279,
+          "chapter": "6",
+          "section": "6.6 Unsolved Questions In Visual Perception",
+          "sections_on_page": [
+            "6.6 Unsolved Questions In Visual Perception"
+          ],
+          "char_count": 2114
+        },
+        {
+          "page_id": "openstax-ibn:p292",
+          "page": 292,
+          "printed_page": 280,
+          "chapter": "6",
+          "section": "6.6 Unsolved Questions In Visual Perception",
+          "sections_on_page": [
+            "6.6 Unsolved Questions In Visual Perception"
+          ],
+          "char_count": 1655
+        },
+        {
+          "page_id": "openstax-ibn:p293",
+          "page": 293,
+          "printed_page": 281,
+          "chapter": "6",
+          "section": "6.6 Unsolved Questions In Visual Perception",
+          "sections_on_page": [
+            "6.6 Unsolved Questions In Visual Perception"
+          ],
+          "char_count": 1137
+        },
+        {
+          "page_id": "openstax-ibn:p294",
+          "page": 294,
+          "printed_page": 282,
+          "chapter": "6",
+          "section": "6.6 Unsolved Questions In Visual Perception",
+          "sections_on_page": [
+            "6.6 Unsolved Questions In Visual Perception"
+          ],
+          "char_count": 2351
+        },
+        {
+          "page_id": "openstax-ibn:p303",
+          "page": 303,
+          "printed_page": null,
+          "chapter": "7",
+          "section": "7.0 Introduction",
+          "sections_on_page": [
+            "7.0 Introduction"
+          ],
+          "char_count": 998
+        },
+        {
+          "page_id": "openstax-ibn:p304",
+          "page": 304,
+          "printed_page": 292,
+          "chapter": "7",
+          "section": "7.0 Introduction",
+          "sections_on_page": [
+            "7.0 Introduction",
+            "7.1 Acoustic Cues and Signals"
+          ],
+          "char_count": 4477
+        },
+        {
+          "page_id": "openstax-ibn:p305",
+          "page": 305,
+          "printed_page": 293,
+          "chapter": "7",
+          "section": "7.1 Acoustic Cues and Signals",
+          "sections_on_page": [
+            "7.1 Acoustic Cues and Signals"
+          ],
+          "char_count": 2933
+        },
+        {
+          "page_id": "openstax-ibn:p306",
+          "page": 306,
+          "printed_page": 294,
+          "chapter": "7",
+          "section": "7.1 Acoustic Cues and Signals",
+          "sections_on_page": [
+            "7.1 Acoustic Cues and Signals"
+          ],
+          "char_count": 4807
+        },
+        {
+          "page_id": "openstax-ibn:p307",
+          "page": 307,
+          "printed_page": 295,
+          "chapter": "7",
+          "section": "7.1 Acoustic Cues and Signals",
+          "sections_on_page": [
+            "7.1 Acoustic Cues and Signals"
+          ],
+          "char_count": 1200
+        },
+        {
+          "page_id": "openstax-ibn:p308",
+          "page": 308,
+          "printed_page": 296,
+          "chapter": "7",
+          "section": "7.1 Acoustic Cues and Signals",
+          "sections_on_page": [
+            "7.1 Acoustic Cues and Signals"
+          ],
+          "char_count": 3449
+        },
+        {
+          "page_id": "openstax-ibn:p309",
+          "page": 309,
+          "printed_page": 297,
+          "chapter": "7",
+          "section": "7.1 Acoustic Cues and Signals",
+          "sections_on_page": [
+            "7.1 Acoustic Cues and Signals"
+          ],
+          "char_count": 5372
+        },
+        {
+          "page_id": "openstax-ibn:p310",
+          "page": 310,
+          "printed_page": 298,
+          "chapter": "7",
+          "section": "7.1 Acoustic Cues and Signals",
+          "sections_on_page": [
+            "7.1 Acoustic Cues and Signals",
+            "7.2 How Does Acoustic Information Enter the Brain?"
+          ],
+          "char_count": 2571
+        },
+        {
+          "page_id": "openstax-ibn:p311",
+          "page": 311,
+          "printed_page": 299,
+          "chapter": "7",
+          "section": "7.2 How Does Acoustic Information Enter the Brain?",
+          "sections_on_page": [
+            "7.2 How Does Acoustic Information Enter the Brain?"
+          ],
+          "char_count": 2630
+        },
+        {
+          "page_id": "openstax-ibn:p312",
+          "page": 312,
+          "printed_page": 300,
+          "chapter": "7",
+          "section": "7.2 How Does Acoustic Information Enter the Brain?",
+          "sections_on_page": [
+            "7.2 How Does Acoustic Information Enter the Brain?"
+          ],
+          "char_count": 2500
+        },
+        {
+          "page_id": "openstax-ibn:p313",
+          "page": 313,
+          "printed_page": 301,
+          "chapter": "7",
+          "section": "7.2 How Does Acoustic Information Enter the Brain?",
+          "sections_on_page": [
+            "7.2 How Does Acoustic Information Enter the Brain?"
+          ],
+          "char_count": 1636
+        },
+        {
+          "page_id": "openstax-ibn:p314",
+          "page": 314,
+          "printed_page": 302,
+          "chapter": "7",
+          "section": "7.2 How Does Acoustic Information Enter the Brain?",
+          "sections_on_page": [
+            "7.2 How Does Acoustic Information Enter the Brain?"
+          ],
+          "char_count": 3684
+        },
+        {
+          "page_id": "openstax-ibn:p315",
+          "page": 315,
+          "printed_page": 303,
+          "chapter": "7",
+          "section": "7.2 How Does Acoustic Information Enter the Brain?",
+          "sections_on_page": [
+            "7.2 How Does Acoustic Information Enter the Brain?"
+          ],
+          "char_count": 2081
+        },
+        {
+          "page_id": "openstax-ibn:p316",
+          "page": 316,
+          "printed_page": 304,
+          "chapter": "7",
+          "section": "7.2 How Does Acoustic Information Enter the Brain?",
+          "sections_on_page": [
+            "7.2 How Does Acoustic Information Enter the Brain?"
+          ],
+          "char_count": 1214
+        },
+        {
+          "page_id": "openstax-ibn:p317",
+          "page": 317,
+          "printed_page": 305,
+          "chapter": "7",
+          "section": "7.2 How Does Acoustic Information Enter the Brain?",
+          "sections_on_page": [
+            "7.2 How Does Acoustic Information Enter the Brain?"
+          ],
+          "char_count": 3527
+        },
+        {
+          "page_id": "openstax-ibn:p318",
+          "page": 318,
+          "printed_page": 306,
+          "chapter": "7",
+          "section": "7.2 How Does Acoustic Information Enter the Brain?",
+          "sections_on_page": [
+            "7.2 How Does Acoustic Information Enter the Brain?"
+          ],
+          "char_count": 3235
+        },
+        {
+          "page_id": "openstax-ibn:p319",
+          "page": 319,
+          "printed_page": 307,
+          "chapter": "7",
+          "section": "7.2 How Does Acoustic Information Enter the Brain?",
+          "sections_on_page": [
+            "7.2 How Does Acoustic Information Enter the Brain?"
+          ],
+          "char_count": 1173
+        },
+        {
+          "page_id": "openstax-ibn:p320",
+          "page": 320,
+          "printed_page": 308,
+          "chapter": "7",
+          "section": "7.2 How Does Acoustic Information Enter the Brain?",
+          "sections_on_page": [
+            "7.2 How Does Acoustic Information Enter the Brain?"
+          ],
+          "char_count": 1333
+        },
+        {
+          "page_id": "openstax-ibn:p321",
+          "page": 321,
+          "printed_page": 309,
+          "chapter": "7",
+          "section": "7.2 How Does Acoustic Information Enter the Brain?",
+          "sections_on_page": [
+            "7.2 How Does Acoustic Information Enter the Brain?"
+          ],
+          "char_count": 4601
+        },
+        {
+          "page_id": "openstax-ibn:p322",
+          "page": 322,
+          "printed_page": 310,
+          "chapter": "7",
+          "section": "7.2 How Does Acoustic Information Enter the Brain?",
+          "sections_on_page": [
+            "7.3 How Does the Brain Process Acoustic Information?"
+          ],
+          "char_count": 3034
+        },
+        {
+          "page_id": "openstax-ibn:p323",
+          "page": 323,
+          "printed_page": 311,
+          "chapter": "7",
+          "section": "7.3 How Does the Brain Process Acoustic Information?",
+          "sections_on_page": [
+            "7.3 How Does the Brain Process Acoustic Information?"
+          ],
+          "char_count": 2063
+        },
+        {
+          "page_id": "openstax-ibn:p324",
+          "page": 324,
+          "printed_page": 312,
+          "chapter": "7",
+          "section": "7.3 How Does the Brain Process Acoustic Information?",
+          "sections_on_page": [
+            "7.3 How Does the Brain Process Acoustic Information?"
+          ],
+          "char_count": 1803
+        },
+        {
+          "page_id": "openstax-ibn:p325",
+          "page": 325,
+          "printed_page": 313,
+          "chapter": "7",
+          "section": "7.3 How Does the Brain Process Acoustic Information?",
+          "sections_on_page": [
+            "7.3 How Does the Brain Process Acoustic Information?"
+          ],
+          "char_count": 1661
+        },
+        {
+          "page_id": "openstax-ibn:p326",
+          "page": 326,
+          "printed_page": 314,
+          "chapter": "7",
+          "section": "7.3 How Does the Brain Process Acoustic Information?",
+          "sections_on_page": [
+            "7.3 How Does the Brain Process Acoustic Information?"
+          ],
+          "char_count": 4636
+        },
+        {
+          "page_id": "openstax-ibn:p327",
+          "page": 327,
+          "printed_page": 315,
+          "chapter": "7",
+          "section": "7.3 How Does the Brain Process Acoustic Information?",
+          "sections_on_page": [
+            "7.3 How Does the Brain Process Acoustic Information?"
+          ],
+          "char_count": 3120
+        },
+        {
+          "page_id": "openstax-ibn:p328",
+          "page": 328,
+          "printed_page": 316,
+          "chapter": "7",
+          "section": "7.3 How Does the Brain Process Acoustic Information?",
+          "sections_on_page": [
+            "7.3 How Does the Brain Process Acoustic Information?"
+          ],
+          "char_count": 3187
+        },
+        {
+          "page_id": "openstax-ibn:p329",
+          "page": 329,
+          "printed_page": 317,
+          "chapter": "7",
+          "section": "7.3 How Does the Brain Process Acoustic Information?",
+          "sections_on_page": [
+            "7.3 How Does the Brain Process Acoustic Information?"
+          ],
+          "char_count": 3629
+        },
+        {
+          "page_id": "openstax-ibn:p330",
+          "page": 330,
+          "printed_page": 318,
+          "chapter": "7",
+          "section": "7.3 How Does the Brain Process Acoustic Information?",
+          "sections_on_page": [
+            "7.3 How Does the Brain Process Acoustic Information?"
+          ],
+          "char_count": 2130
+        },
+        {
+          "page_id": "openstax-ibn:p331",
+          "page": 331,
+          "printed_page": 319,
+          "chapter": "7",
+          "section": "7.3 How Does the Brain Process Acoustic Information?",
+          "sections_on_page": [
+            "7.3 How Does the Brain Process Acoustic Information?"
+          ],
+          "char_count": 1453
+        },
+        {
+          "page_id": "openstax-ibn:p332",
+          "page": 332,
+          "printed_page": 320,
+          "chapter": "7",
+          "section": "7.3 How Does the Brain Process Acoustic Information?",
+          "sections_on_page": [
+            "7.3 How Does the Brain Process Acoustic Information?",
+            "7.4 Balance: A Sense of Where You Are"
+          ],
+          "char_count": 2555
+        },
+        {
+          "page_id": "openstax-ibn:p333",
+          "page": 333,
+          "printed_page": 321,
+          "chapter": "7",
+          "section": "7.4 Balance: A Sense of Where You Are",
+          "sections_on_page": [
+            "7.4 Balance: A Sense of Where You Are"
+          ],
+          "char_count": 3258
+        },
+        {
+          "page_id": "openstax-ibn:p334",
+          "page": 334,
+          "printed_page": 322,
+          "chapter": "7",
+          "section": "7.4 Balance: A Sense of Where You Are",
+          "sections_on_page": [
+            "7.4 Balance: A Sense of Where You Are"
+          ],
+          "char_count": 2353
+        },
+        {
+          "page_id": "openstax-ibn:p335",
+          "page": 335,
+          "printed_page": 323,
+          "chapter": "7",
+          "section": "7.4 Balance: A Sense of Where You Are",
+          "sections_on_page": [
+            "7.4 Balance: A Sense of Where You Are"
+          ],
+          "char_count": 1700
+        },
+        {
+          "page_id": "openstax-ibn:p336",
+          "page": 336,
+          "printed_page": 324,
+          "chapter": "7",
+          "section": "7.4 Balance: A Sense of Where You Are",
+          "sections_on_page": [
+            "7.4 Balance: A Sense of Where You Are"
+          ],
+          "char_count": 1517
+        },
+        {
+          "page_id": "openstax-ibn:p337",
+          "page": 337,
+          "printed_page": 325,
+          "chapter": "7",
+          "section": "7.4 Balance: A Sense of Where You Are",
+          "sections_on_page": [
+            "7.4 Balance: A Sense of Where You Are"
+          ],
+          "char_count": 2012
+        },
+        {
+          "page_id": "openstax-ibn:p338",
+          "page": 338,
+          "printed_page": 326,
+          "chapter": "7",
+          "section": "7.4 Balance: A Sense of Where You Are",
+          "sections_on_page": [
+            "7.4 Balance: A Sense of Where You Are"
+          ],
+          "char_count": 291
+        }
+      ]
+    }
+  ],
+  "normalization": "PyMuPDF text blocks; NFKC; curly quotes folded; soft hyphen/zero-width removed; running header/footer and author/multimedia link lines removed; line-end hyphen kept for compound words (all 15 cases checked are compounds)."
+}

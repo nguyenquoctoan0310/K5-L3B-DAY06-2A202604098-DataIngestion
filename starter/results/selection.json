@@ -1,0 +1,23 @@
+{
+  "decided_at": "2026-11-14T04:12:58+00:00",
+  "criterion": "dev Evidence Hit@3 > dev Hit@1 > coherence > chunk count",
+  "dev_scores": {
+    "A": {
+      "hit_at_3": "11/16",
+      "hit_at_1": "8/16"
+    },
+    "B": {
+      "hit_at_3": "9/16",
+      "hit_at_1": "7/16"
+    },
+    "C": {
+      "hit_at_3": "10/16",
+      "hit_at_1": "7/16"
+    }
+  },
+  "leaders_after_hit_metrics": [
+    "A"
+  ],
+  "selected": "A",
+  "note": "decided by retrieval metrics"
+}

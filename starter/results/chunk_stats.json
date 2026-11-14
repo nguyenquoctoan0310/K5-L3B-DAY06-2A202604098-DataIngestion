@@ -1,0 +1,42 @@
+{
+  "A": {
+    "chunking": "fixed",
+    "params": {
+      "size": 500,
+      "overlap": 50
+    },
+    "chunks": 454,
+    "total_chars": 209604,
+    "approx_tokens": 52797,
+    "len_min": 54,
+    "len_median": 500.0,
+    "len_mean": 461.7,
+    "len_max": 500,
+    "len_lt_200": 22,
+    "unique_ids": true,
+    "deterministic": true,
+    "chunking_seconds": 0.003,
+    "dev_evidence_intact": "16/16",
+    "dev_evidence_split": []
+  },
+  "B": {
+    "chunking": "paragraph",
+    "params": {
+      "max_size": 800,
+      "min_size": 150
+    },
+    "chunks": 333,
+    "total_chars": 190473,
+    "approx_tokens": 47978,
+    "len_min": 69,
+    "len_median": 623,
+    "len_mean": 572.0,
+    "len_max": 901,
+    "len_lt_200": 17,
+    "unique_ids": true,
+    "deterministic": true,
+    "chunking_seconds": 0.011,
+    "dev_evidence_intact": "16/16",
+    "dev_evidence_split": []
+  }
+}

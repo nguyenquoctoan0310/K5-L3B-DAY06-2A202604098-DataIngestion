@@ -1,0 +1,58 @@
+{
+  "coherence": {
+    "reviewed": 20,
+    "agree": 15,
+    "changed": [
+      {
+        "key": {
+          "position_id": "p252@1535",
+          "index": "B"
+        },
+        "ai": "2",
+        "author": "1"
+      },
+      {
+        "key": {
+          "position_id": "p255@637",
+          "index": "B"
+        },
+        "ai": "1",
+        "author": "2"
+      },
+      {
+        "key": {
+          "position_id": "p257@600",
+          "index": "B"
+        },
+        "ai": "2",
+        "author": "1"
+      },
+      {
+        "key": {
+          "position_id": "p258@889",
+          "index": "B"
+        },
+        "ai": "2",
+        "author": "1"
+      },
+      {
+        "key": {
+          "position_id": "p260@354",
+          "index": "B"
+        },
+        "ai": "2",
+        "author": "1"
+      }
+    ]
+  },
+  "grounding": {
+    "reviewed": 15,
+    "agree": 15,
+    "changed": []
+  },
+  "metadata": {
+    "reviewed": 45,
+    "correct": 45,
+    "errors": []
+  }
+}

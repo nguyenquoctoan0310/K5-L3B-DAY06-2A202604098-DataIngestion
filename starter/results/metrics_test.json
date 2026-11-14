@@ -1,0 +1,102 @@
+{
+  "run_at": "2026-11-14T04:13:39+00:00",
+  "split": "test",
+  "top_k": 3,
+  "embedding": {
+    "provider": "local sentence-transformers",
+    "model": "intfloat/multilingual-e5-base",
+    "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "dimensions": 768,
+    "max_seq_length": 512,
+    "device": "cpu",
+    "query_prefix": "query: ",
+    "document_prefix": "passage: ",
+    "normalized": true,
+    "truncated_documents": 0,
+    "cost_usd": 0
+  },
+  "strategies": {
+    "A": {
+      "chunking": "fixed",
+      "params": {
+        "size": 500,
+        "overlap": 50
+      },
+      "index": "A",
+      "use_filter": false,
+      "hypothesis": "Baseline: fixed 500-char windows cut sentences and evidence; lower Hit@1/coherence."
+    },
+    "B": {
+      "chunking": "paragraph",
+      "params": {
+        "max_size": 800,
+        "min_size": 150
+      },
+      "index": "B",
+      "use_filter": false,
+      "hypothesis": "Paragraph/heading chunks keep evidence whole -> higher Hit@3 and coherence than A."
+    },
+    "C": {
+      "chunking": "paragraph",
+      "params": {
+        "max_size": 800,
+        "min_size": 150
+      },
+      "index": "B",
+      "use_filter": true,
+      "hypothesis": "Same chunks as B; chapter filter removes cross-chapter distractors on filter questions."
+    }
+  },
+  "metrics": {
+    "A": {
+      "N": 6,
+      "hit_at_1": "3/6",
+      "hit_at_1_pct": 50.0,
+      "evidence_hit_at_3": "4/6",
+      "evidence_hit_at_3_pct": 66.7,
+      "page_at_3": "6/6",
+      "filter_compliance": "1/1",
+      "misses_at_3": [
+        "t18",
+        "t21"
+      ],
+      "misses_at_1": [
+        "t18",
+        "t19",
+        "t21"
+      ],
+      "mean_query_ms": 83.3
+    },
+    "B": {
+      "N": 6,
+      "hit_at_1": "4/6",
+      "hit_at_1_pct": 66.7,
+      "evidence_hit_at_3": "6/6",
+      "evidence_hit_at_3_pct": 100.0,
+      "page_at_3": "6/6",
+      "filter_compliance": "0/1",
+      "misses_at_3": [],
+      "misses_at_1": [
+        "t18",
+        "t19"
+      ],
+      "mean_query_ms": 68.5
+    },
+    "C": {
+      "N": 6,
+      "hit_at_1": "4/6",
+      "hit_at_1_pct": 66.7,
+      "evidence_hit_at_3": "6/6",
+      "evidence_hit_at_3_pct": 100.0,
+      "page_at_3": "6/6",
+      "filter_compliance": "1/1",
+      "misses_at_3": [],
+      "misses_at_1": [
+        "t18",
+        "t19"
+      ],
+      "mean_query_ms": 64.4
+    }
+  },
+  "recomputed_from_traces_at": "2026-11-14T04:19:51+00:00"
+}

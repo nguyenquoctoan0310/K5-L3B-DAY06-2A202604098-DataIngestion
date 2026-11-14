@@ -1,0 +1,68 @@
+{
+  "started_at": "2026-11-14T04:02:53+00:00",
+  "pages": 80,
+  "load_seconds": 8.07,
+  "indexes": {
+    "A": {
+      "chunking": "fixed",
+      "params": {
+        "size": 500,
+        "overlap": 50
+      },
+      "chunks": 454,
+      "rows_in_db": 454,
+      "inserted": 0,
+      "updated": 0,
+      "unchanged": 454,
+      "deleted": 0,
+      "embedded": 0,
+      "chunk_seconds": 0.06,
+      "embed_seconds": 0.0,
+      "upsert_seconds": 0.05,
+      "total_seconds": 0.11
+    },
+    "B": {
+      "chunking": "paragraph",
+      "params": {
+        "max_size": 800,
+        "min_size": 150
+      },
+      "chunks": 333,
+      "rows_in_db": 333,
+      "inserted": 0,
+      "updated": 0,
+      "unchanged": 333,
+      "deleted": 0,
+      "embedded": 0,
+      "chunk_seconds": 0.04,
+      "embed_seconds": 0.0,
+      "upsert_seconds": 0.08,
+      "total_seconds": 0.12
+    }
+  },
+  "embedding": {
+    "provider": "local sentence-transformers",
+    "model": "intfloat/multilingual-e5-base",
+    "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "dimensions": 768,
+    "max_seq_length": 512,
+    "device": "cpu",
+    "query_prefix": "query: ",
+    "document_prefix": "passage: ",
+    "normalized": true,
+    "truncated_documents": 0,
+    "cost_usd": 0
+  },
+  "warnings": [
+    {
+      "level": "WARN",
+      "page": 285,
+      "issue": "short page: 69 chars"
+    },
+    {
+      "level": "WARN",
+      "page": 338,
+      "issue": "short page: 291 chars"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+    "python.terminal.useEnvFile": true,
+    "python.defaultInterpreterPath": "${workspaceFolder}/starter/.venv/Scripts/python.exe",
+    "python.analysis.extraPaths": ["${workspaceFolder}/starter"]
+}

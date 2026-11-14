@@ -1,0 +1,62 @@
+{
+  "label_status": {
+    "Nguyen Quoc Toan (blind review, agrees with AI draft)": 30,
+    "Nguyen Quoc Toan (blind review, changed AI draft 2->1)": 4,
+    "Nguyen Quoc Toan (blind review, changed AI draft 1->2)": 1,
+    "Nguyen Quoc Toan (web review, checked against rendered PDF page)": 45
+  },
+  "A": {
+    "coherence_mean": 1.0,
+    "coherence_n": 10,
+    "coherence_dist": {
+      "0": 0,
+      "1": 10,
+      "2": 0
+    },
+    "metadata_correct": "15/15",
+    "filter_compliance_test_sample": "N/A",
+    "grounding_dist": {
+      "0": 0,
+      "1": 1,
+      "2": 4
+    },
+    "grounding_mean": 1.8,
+    "grounding_n": 5
+  },
+  "B": {
+    "coherence_mean": 1.6,
+    "coherence_n": 10,
+    "coherence_dist": {
+      "0": 0,
+      "1": 4,
+      "2": 6
+    },
+    "metadata_correct": "15/15",
+    "filter_compliance_test_sample": "N/A",
+    "grounding_dist": {
+      "0": 0,
+      "1": 0,
+      "2": 5
+    },
+    "grounding_mean": 2.0,
+    "grounding_n": 5
+  },
+  "C": {
+    "coherence_mean": 1.6,
+    "coherence_n": 10,
+    "coherence_dist": {
+      "0": 0,
+      "1": 4,
+      "2": 6
+    },
+    "metadata_correct": "15/15",
+    "filter_compliance_test_sample": "1/1",
+    "grounding_dist": {
+      "0": 0,
+      "1": 0,
+      "2": 5
+    },
+    "grounding_mean": 2.0,
+    "grounding_n": 5
+  }
+}

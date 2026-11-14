@@ -1,0 +1,109 @@
+﻿position_id,index,applies_to,chunk_id,chunk_len,source_context,chunk_text,label,reason,labeled_by,ai_label,ai_reason
+p251@338,A,A,openstax-ibn:p251:f00,500,"  CHAPTER OUTLINE  6.1 An Overview of the Visual System  6.2 The Retina  6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells  6.4 T","# Chapter 6: Vision
+
+FIGURE 6.1 Vision begins in the retina, a layered structure where photoreceptors absorb light to start a chain of activity that ends in the brain. Image Credit: Wei Li, National Eye Institute, National Institutes of Health. Public domain
+
+CHAPTER OUTLINE
+
+6.1 An Overview of the Visual System
+
+6.2 The Retina
+
+6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells
+
+6.4 The Thalamus and Primary Visual Cortex
+
+6.5 Extrastriate Cortex
+
+6.6 Unsolved Quest",1,6.6 thiếu từ,"Nguyen Quoc Toan (blind review, agrees with AI draft)",1,"Chapter outline, but cut mid-word at the end ('6.6 Unsolved Quest')."
+p251@338,B,"B,C",openstax-ibn:p251:p00,525,"  CHAPTER OUTLINE  6.1 An Overview of the Visual System  6.2 The Retina  6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells  6.4 T","# Chapter 6: Vision
+
+FIGURE 6.1 Vision begins in the retina, a layered structure where photoreceptors absorb light to start a chain of activity that ends in the brain. Image Credit: Wei Li, National Eye Institute, National Institutes of Health. Public domain
+
+CHAPTER OUTLINE
+
+6.1 An Overview of the Visual System
+
+6.2 The Retina
+
+6.3 Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells
+
+6.4 The Thalamus and Primary Visual Cortex
+
+6.5 Extrastriate Cortex
+
+6.6 Unsolved Questions In Visual Perception",2,ok,"Nguyen Quoc Toan (blind review, agrees with AI draft)",2,"Whole chapter opener: title, figure caption and complete outline."
+p252@1535,A,A,openstax-ibn:p252:f03,500,"dings through echolocation, but our vision does something similar. The sun or artificial sources flood our surroundings with light, and we detect reflections of"," from tree branches and their insect prey. It's hard to imagine what it might be like to perceive surroundings through echolocation, but our vision does something similar. The sun or artificial sources flood our surroundings with light, and we detect reflections of that light from the surfaces around us. Our brain processes that sensory information to construct a mental image of the world—something we might not believe could be done if we didn't do it ourselves.
+
+# 6.1 An Overview of the Visual ",1,thiếu ở 1 số phần,"Nguyen Quoc Toan (blind review, agrees with AI draft)",1,Starts mid-sentence ('from tree branches and their insect prey') without the subject (bats); ends with a cut heading '# 6.1 An Overview of the Visual'.
+p252@1535,B,"B,C",openstax-ibn:p252:p02,660,"dings through echolocation, but our vision does something similar. The sun or artificial sources flood our surroundings with light, and we detect reflections of","An analogy can help us understand how unlikely vision would seem to us if we didn't have a sophisticated visual system ourselves. In the 1940s, scientists discovered how bats could fly freely in the dark and catch flying insects without using vision. The bats use echolocation: they emit ultrasonic screeches and then detect the echoes of sounds reflected from tree branches and their insect prey. It's hard to imagine what it might be like to perceive surroundings through echolocation, but our vision does something similar. The sun or artificial sources flood our surroundings with light, and we detect reflections of that light from the surfaces around us.",1,vẫn thiếu ở 1 số dòng,"Nguyen Quoc Toan (blind review, changed AI draft 2->1)",2,Complete bat-echolocation analogy paragraph; understandable alone (final concluding sentence is in the next chunk).
+p253@896,A,A,openstax-ibn:p253:f01,500,"ble spectrum, eventually allowing us to perceive light. Figure 6.3 shows the major parts of the eye.  FIGURE 6.3 Anatomy of the human eye  At the front of the e","e. Shorter wavelengths within the visible spectrum we call blue while longer ones look red. White light combines wavelengths from the entire visible spectrum. Bright lights produce many photons per second, while dim lights emit few photons per second.
+
+## Anatomy of the Eye
+
+The eye is the primary sensory structure that intercepts electromagnetic waves in the visible spectrum, eventually allowing us to perceive light. Figure 6.3 shows the major parts of the eye.
+
+FIGURE 6.3 Anatomy of the human ",1,thiếu 1 số phần,"Nguyen Quoc Toan (blind review, agrees with AI draft)",1,"Starts mid-word ('e. Shorter wavelengths'), mixes the light-spectrum topic with the eye-anatomy heading, ends cut ('FIGURE 6.3 Anatomy of the human')."
+p253@896,B,"B,C",openstax-ibn:p253:p01,796,"ble spectrum, eventually allowing us to perceive light. Figure 6.3 shows the major parts of the eye.  FIGURE 6.3 Anatomy of the human eye  At the front of the e","## Anatomy of the Eye
+
+The eye is the primary sensory structure that intercepts electromagnetic waves in the visible spectrum, eventually allowing us to perceive light. Figure 6.3 shows the major parts of the eye.
+
+FIGURE 6.3 Anatomy of the human eye
+
+At the front of the eye, the eye's optics are like the lens of a camera. The rays of light reflected from objects spread out in space. The cornea and crystalline lens intercept the arriving rays of light and bend them to form a focused image on the retina at the rear of the eye. Interestingly, because lenses invert images, the projection of the world on the retina is upside-down and left-right reversed. Figure 6.4 shows how light reflected from objects diverges in space but is refocused and flipped around for its projection on the retina.",2,ok,"Nguyen Quoc Toan (blind review, agrees with AI draft)",2,Heading 'Anatomy of the Eye' plus complete paragraphs on the optics and image inversion.
+p254@957,A,A,openstax-ibn:p254:f02,500,"rs that provide our highest visual acuity. When we look at an object, we turn our head and eyes to project the object's image onto the fovea, where we perceive ","hest visual acuity. When we look at an object, we turn our head and eyes to project the object's image onto the fovea, where we perceive details most clearly.
+
+The remaining structural features include the choroid, a layer behind the retina with blood vessels that nourish the retina and a screening pigment to absorb stray light and prevent internal reflections. Behind that is the tough white of the eye, the sclera.
+
+## Correcting Optical Flaws: Myopia, Hyperopia and Presbyopia
+
+Sharp vision requ",1,thiếu,"Nguyen Quoc Toan (blind review, agrees with AI draft)",1,Starts mid-word ('hest visual acuity'); ends with a cut heading ('Sharp vision requ').
+p254@957,B,"B,C",openstax-ibn:p254:p02,398,"rs that provide our highest visual acuity. When we look at an object, we turn our head and eyes to project the object's image onto the fovea, where we perceive ","When we look at an object, we turn our head and eyes to project the object's image onto the fovea, where we perceive details most clearly.
+
+The remaining structural features include the choroid, a layer behind the retina with blood vessels that nourish the retina and a screening pigment to absorb stray light and prevent internal reflections. Behind that is the tough white of the eye, the sclera.",2,ok,"Nguyen Quoc Toan (blind review, agrees with AI draft)",2,"Two complete paragraphs (fovea fixation, choroid/sclera); readable alone."
+p255@637,A,A,openstax-ibn:p255:f01,500,"ty to focus.  # 6.2 The Retina  LEARNING OBJECTIVES By the end of this section, you should be able to  6.2.1 Describe the layers of the retina and the five majo","y objects such as pages of text. At that point, corrective lenses are needed to supplement the lens's ability to focus.
+
+# 6.2 The Retina
+
+LEARNING OBJECTIVES By the end of this section, you should be able to
+
+6.2.1 Describe the layers of the retina and the five major cell types 6.2.2 Describe the functional differences and anatomical distributions of the two kinds of photoreceptors: rods and cones 6.2.3 Describe the steps in phototransduction 6.2.4 Explain how cones transduce color information ",1,thiếu,"Nguyen Quoc Toan (blind review, agrees with AI draft)",1,"Starts mid-word ('y objects such as pages of text'), then section 6.2 heading and learning objectives cut mid-sentence."
+p255@637,B,"B,C",openstax-ibn:p255:p01,704,"ty to focus.  # 6.2 The Retina  LEARNING OBJECTIVES By the end of this section, you should be able to  6.2.1 Describe the layers of the retina and the five majo","# 6.2 The Retina
+
+LEARNING OBJECTIVES By the end of this section, you should be able to
+
+6.2.1 Describe the layers of the retina and the five major cell types 6.2.2 Describe the functional differences and anatomical distributions of the two kinds of photoreceptors: rods and cones 6.2.3 Describe the steps in phototransduction 6.2.4 Explain how cones transduce color information by using different visual pigments with maximal sensitivity to different wavelengths of light
+
+In this section, we will explore the retina, and meet its five major types of neurons. We will see that vision begins with specialized sensory receptors, the rods and cones, which capture light energy and create a neural signal, a",2,ok,"Nguyen Quoc Toan (blind review, changed AI draft 1->2)",1,"Heading + objectives are complete, but the chunk ends mid-sentence ('create a neural signal, a') because the sentence continues on p.256: page-level chunking limitation."
+p256@1582,A,A,openstax-ibn:p256:f03,500,"more accessible than the developed brain and arranged in clear layers of defined neuronal cell types, it has been the subject of many experimental studies. This","ver the retina next to the ganglion cells.
+
+FIGURE 6.6 Retina structure
+
+Embryologically, the retina is an outpocketing of the brain, and because it is more accessible than the developed brain and arranged in clear layers of defined neuronal cell types, it has been the subject of many experimental studies. This began in the 1890s when Cajal published images of retinas stained by the Golgi method, and identified many of the cell types. Since all vertebrate retinas have the same general structure,",1,thiếu,"Nguyen Quoc Toan (blind review, agrees with AI draft)",1,"Starts with a fragment ('ver the retina next to the ganglion cells.'), ends mid-sentence ('have the same general structure,')."
+p256@1582,B,"B,C",openstax-ibn:p256:p02,620,"more accessible than the developed brain and arranged in clear layers of defined neuronal cell types, it has been the subject of many experimental studies. This","FIGURE 6.6 Retina structure
+
+Embryologically, the retina is an outpocketing of the brain, and because it is more accessible than the developed brain and arranged in clear layers of defined neuronal cell types, it has been the subject of many experimental studies. This began in the 1890s when Cajal published images of retinas stained by the Golgi method, and identified many of the cell types. Since all vertebrate retinas have the same general structure, retinas with relatively large cells have been the most intensively studied, such as the retina of the mudpuppy, a large amphibian related to frogs and salamanders.",2,ok,"Nguyen Quoc Toan (blind review, agrees with AI draft)",2,"Figure caption + complete paragraph on why retinas are studied (Cajal, mudpuppy)."
+p257@600,A,A,openstax-ibn:p257:f01,500,"ones Capture Photons of Light  In 6.2 The Retina we introduced photoreceptors, the specialized neurons that respond to light. Photoreceptors (Figure 6.8) have a"," Webvision, http://webvision.med.utah.edu/ CC BY-NC 4.0
+
+## Rods and Cones Capture Photons of Light
+
+In 6.2 The Retina we introduced photoreceptors, the specialized neurons that respond to light. Photoreceptors (Figure 6.8) have an outer segment of discs, or infolded membrane in which millions of visual pigment molecules are embedded. These pigment molecules give photoreceptors the ability to capture light and will be discussed more below. Photoreceptors also have an inner segment with mitochond",1,câu cuối không đầy đủ,"Nguyen Quoc Toan (blind review, agrees with AI draft)",1,Starts with an image-credit URL fragment; paragraph cut mid-word ('mitochond').
+p257@600,B,"B,C",openstax-ibn:p257:p01,694,"ones Capture Photons of Light  In 6.2 The Retina we introduced photoreceptors, the specialized neurons that respond to light. Photoreceptors (Figure 6.8) have a","## Rods and Cones Capture Photons of Light
+
+In 6.2 The Retina we introduced photoreceptors, the specialized neurons that respond to light. Photoreceptors (Figure 6.8) have an outer segment of discs, or infolded membrane in which millions of visual pigment molecules are embedded. These pigment molecules give photoreceptors the ability to capture light and will be discussed more below. Photoreceptors also have an inner segment with mitochondria, the nucleus, and other structures typical of all cells (see Chapter 1 Structure and Function of the Nervous System: Cells and Anatomy). The synaptic terminal is the photoreceptor's output region, where it connects to bipolar and horizontal cells.",1,câu cuối thiếu,"Nguyen Quoc Toan (blind review, changed AI draft 2->1)",2,Heading + complete paragraph on photoreceptor structure.
+p258@889,A,A,openstax-ibn:p258:f01,500,"urates their response, and only the cones signal differences in brightness.  ## Rods and Cones Depolarize in the Dark and Hyperpolarize in the Light  When neuro","120 million rods, which are absent from the fovea but distributed across the rest of the retina. Rods serve low-acuity vision in dim light (such as moonlight), and under optimal dark-adapted conditions a rod can respond to as little as a single photon of light. In daylight and typical artificial light, the rods no longer respond because the bright light saturates their response, and only the cones signal differences in brightness.
+
+## Rods and Cones Depolarize in the Dark and Hyperpolarize in th",1,thiếu,"Nguyen Quoc Toan (blind review, agrees with AI draft)",1,Starts '120 million rods' without the subject sentence; ends with a cut heading ('...Hyperpolarize in th').
+p258@889,B,"B,C",openstax-ibn:p258:p01,894,"urates their response, and only the cones signal differences in brightness.  ## Rods and Cones Depolarize in the Dark and Hyperpolarize in the Light  When neuro","## Rods and Cones Depolarize in the Dark and Hyperpolarize in the Light
+
+When neurobiologists first succeeded in recording from rods and cones with intracellular electrodes, they were puzzled by what they found. Most sensory receptors, including invertebrate photoreceptors, depolarize in response to a stimulus, but vertebrate photoreceptors hyperpolarize (become more negative) in response to light. Figure 6.9 shows an example of the kind of data one of these experiments generated, where a photoreceptor's intracellular electrical response was recorded while light was flashed on it. Dim flashes elicited a small hyperpolarization, and bright flashes evoked a large hyperpolarization. The receptors in the dark also had a surprisingly depolarized resting potential, about -40 mV instead of the -60 mV more typical of nerve cells (see Chapter 2 Neurophysiology).
+
+Everything seemed backward!",1,thiếu 1 từ của dòng,"Nguyen Quoc Toan (blind review, changed AI draft 2->1)",2,"Heading + complete paragraph on the 'backward' photoreceptor response, including the closing remark."
+p259@799,A,A,openstax-ibn:p259:f01,500,"larization that occurs in the dark. Like all other neurons, photoreceptors release their transmitter (glutamate) when they are depolarized, so photoreceptors co","ater degrees of hyperpolarization. In a way, we can think of the response to light as allowing the photoreceptors to return to their ""real"" resting potential (the potential when the sodium channels are closed, about -60 mV like other neurons). Light interrupts the depolarization that occurs in the dark. Like all other neurons, photoreceptors release their transmitter (glutamate) when they are depolarized, so photoreceptors continually release transmitter in the dark, and light interrupts transmi",1,thiếu,"Nguyen Quoc Toan (blind review, agrees with AI draft)",1,"Starts mid-word ('ater degrees of hyperpolarization'), ends mid-word ('interrupts transmi')."
+p259@799,B,"B,C",openstax-ibn:p259:p01,358,"larization that occurs in the dark. Like all other neurons, photoreceptors release their transmitter (glutamate) when they are depolarized, so photoreceptors co","Like all other neurons, photoreceptors release their transmitter (glutamate) when they are depolarized, so photoreceptors continually release transmitter in the dark, and light interrupts transmitter release. In the next section, we will discuss how photoreceptors keep Na+ channels open to become depolarized in the dark and how light exposure cancels that.",2,ok,"Nguyen Quoc Toan (blind review, agrees with AI draft)",2,Self-contained paragraph on glutamate release in the dark.
+p260@354,A,A,openstax-ibn:p260:f00,500,"cis retinal has a bent side chain. Capturing a single photon provides the energy to straighten the side chain to its straight, ""all-trans"" shape. This in turn a","FIGURE 6.10 Phototransduction
+
+In rods, rhodopsin molecules are the visual pigment packed into the disk membranes. Rhodopsin molecules consist of two components: opsin, a large protein, and 11-cis retinal, a small subunit that is derived from Vitamin A. In the dark, the 11-cis retinal has a bent side chain. Capturing a single photon provides the energy to straighten the side chain to its straight, ""all-trans"" shape. This in turn activates the opsin protein, which leads to a series of steps that ",1,thiếu,"Nguyen Quoc Toan (blind review, agrees with AI draft)",1,Phototransduction paragraph cut before its key point ('leads to a series of steps that ...'); the sodium-channel closure is missing.
+p260@354,B,"B,C",openstax-ibn:p260:p00,709,"cis retinal has a bent side chain. Capturing a single photon provides the energy to straighten the side chain to its straight, ""all-trans"" shape. This in turn a","FIGURE 6.10 Phototransduction
+
+In rods, rhodopsin molecules are the visual pigment packed into the disk membranes. Rhodopsin molecules consist of two components: opsin, a large protein, and 11-cis retinal, a small subunit that is derived from Vitamin A. In the dark, the 11-cis retinal has a bent side chain. Capturing a single photon provides the energy to straighten the side chain to its straight, ""all-trans"" shape. This in turn activates the opsin protein, which leads to a series of steps that reduce the level of cGMP, a messenger molecule in the cytoplasm. While the intermediate steps may seem detailed, the important point is that light leads to closure of sodium channels that are open in the dark.",1,thiếu,"Nguyen Quoc Toan (blind review, changed AI draft 2->1)",2,Complete phototransduction paragraph including the key point (closure of sodium channels).

@@ -1,0 +1,699 @@
+{
+  "generated": "2026-11-14",
+  "summary": {
+    "INFO": 80,
+    "WARN": 2
+  },
+  "entries": [
+    {
+      "level": "INFO",
+      "page": 251,
+      "issue": "removed boilerplate",
+      "lines": [
+        "Meet the author"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 252,
+      "issue": "removed boilerplate",
+      "lines": [
+        "240 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 253,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.1 • An Overview of the Visual System 241"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 254,
+      "issue": "removed boilerplate",
+      "lines": [
+        "242 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 255,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.2 • The Retina 243"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 256,
+      "issue": "removed boilerplate",
+      "lines": [
+        "244 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 257,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.2 • The Retina 245"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 258,
+      "issue": "removed boilerplate",
+      "lines": [
+        "246 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 259,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.2 • The Retina 247"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 260,
+      "issue": "removed boilerplate",
+      "lines": [
+        "248 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 261,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.2 • The Retina 249"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 262,
+      "issue": "removed boilerplate",
+      "lines": [
+        "250 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 263,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.2 • The Retina 251"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 264,
+      "issue": "removed boilerplate",
+      "lines": [
+        "252 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 265,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.3 • Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells 253"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 266,
+      "issue": "removed boilerplate",
+      "lines": [
+        "254 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 267,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.3 • Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells 255"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 268,
+      "issue": "removed boilerplate",
+      "lines": [
+        "256 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 269,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.3 • Visual Processing Begins in Bipolar, Horizontal, Amacrine and Ganglion Cells 257"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 270,
+      "issue": "removed boilerplate",
+      "lines": [
+        "258 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 271,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.4 • The Thalamus and Primary Visual Cortex 259"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 272,
+      "issue": "removed boilerplate",
+      "lines": [
+        "260 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 273,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.4 • The Thalamus and Primary Visual Cortex 261"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 274,
+      "issue": "removed boilerplate",
+      "lines": [
+        "262 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 275,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.4 • The Thalamus and Primary Visual Cortex 263"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 276,
+      "issue": "removed boilerplate",
+      "lines": [
+        "264 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 277,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.4 • The Thalamus and Primary Visual Cortex 265"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 278,
+      "issue": "removed boilerplate",
+      "lines": [
+        "266 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 279,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.4 • The Thalamus and Primary Visual Cortex 267"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 280,
+      "issue": "removed boilerplate",
+      "lines": [
+        "268 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 281,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.4 • The Thalamus and Primary Visual Cortex 269"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 282,
+      "issue": "removed boilerplate",
+      "lines": [
+        "270 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 283,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.4 • The Thalamus and Primary Visual Cortex 271"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 284,
+      "issue": "removed boilerplate",
+      "lines": [
+        "272 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "WARN",
+      "page": 285,
+      "issue": "short page: 69 chars"
+    },
+    {
+      "level": "INFO",
+      "page": 285,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.4 • The Thalamus and Primary Visual Cortex 273"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 286,
+      "issue": "removed boilerplate",
+      "lines": [
+        "274 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 287,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.5 • Extrastriate Cortex 275"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 288,
+      "issue": "removed boilerplate",
+      "lines": [
+        "276 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 289,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.5 • Extrastriate Cortex 277"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 290,
+      "issue": "removed boilerplate",
+      "lines": [
+        "278 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 291,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.6 • Unsolved Questions In Visual Perception 279"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 292,
+      "issue": "removed boilerplate",
+      "lines": [
+        "280 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 293,
+      "issue": "removed boilerplate",
+      "lines": [
+        "6.6 • Unsolved Questions In Visual Perception 281"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 294,
+      "issue": "removed boilerplate",
+      "lines": [
+        "282 6 • Vision",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 303,
+      "issue": "removed boilerplate",
+      "lines": [
+        "Access multimedia content"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 304,
+      "issue": "removed boilerplate",
+      "lines": [
+        "292 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 305,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.1 • Acoustic Cues and Signals 293"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 306,
+      "issue": "removed boilerplate",
+      "lines": [
+        "294 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 307,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.1 • Acoustic Cues and Signals 295"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 308,
+      "issue": "removed boilerplate",
+      "lines": [
+        "296 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 309,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.1 • Acoustic Cues and Signals 297"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 310,
+      "issue": "removed boilerplate",
+      "lines": [
+        "298 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 311,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.2 • How Does Acoustic Information Enter the Brain? 299"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 312,
+      "issue": "removed boilerplate",
+      "lines": [
+        "300 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 313,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.2 • How Does Acoustic Information Enter the Brain? 301"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 314,
+      "issue": "removed boilerplate",
+      "lines": [
+        "302 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 315,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.2 • How Does Acoustic Information Enter the Brain? 303"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 316,
+      "issue": "removed boilerplate",
+      "lines": [
+        "304 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 317,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.2 • How Does Acoustic Information Enter the Brain? 305"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 318,
+      "issue": "removed boilerplate",
+      "lines": [
+        "306 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 319,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.2 • How Does Acoustic Information Enter the Brain? 307"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 320,
+      "issue": "removed boilerplate",
+      "lines": [
+        "308 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 321,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.2 • How Does Acoustic Information Enter the Brain? 309"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 322,
+      "issue": "removed boilerplate",
+      "lines": [
+        "310 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 323,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.3 • How Does the Brain Process Acoustic Information? 311"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 324,
+      "issue": "removed boilerplate",
+      "lines": [
+        "312 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 325,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.3 • How Does the Brain Process Acoustic Information? 313"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 326,
+      "issue": "removed boilerplate",
+      "lines": [
+        "314 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 327,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.3 • How Does the Brain Process Acoustic Information? 315"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 328,
+      "issue": "removed boilerplate",
+      "lines": [
+        "316 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 329,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.3 • How Does the Brain Process Acoustic Information? 317"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 330,
+      "issue": "removed boilerplate",
+      "lines": [
+        "318 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 331,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.3 • How Does the Brain Process Acoustic Information? 319"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 332,
+      "issue": "removed boilerplate",
+      "lines": [
+        "320 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 333,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.4 • Balance: A Sense of Where You Are 321"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 334,
+      "issue": "removed boilerplate",
+      "lines": [
+        "322 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 335,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.4 • Balance: A Sense of Where You Are 323"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 336,
+      "issue": "removed boilerplate",
+      "lines": [
+        "324 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    },
+    {
+      "level": "INFO",
+      "page": 337,
+      "issue": "removed boilerplate",
+      "lines": [
+        "7.4 • Balance: A Sense of Where You Are 325"
+      ]
+    },
+    {
+      "level": "WARN",
+      "page": 338,
+      "issue": "short page: 291 chars"
+    },
+    {
+      "level": "INFO",
+      "page": 338,
+      "issue": "removed boilerplate",
+      "lines": [
+        "326 7 • Hearing and Balance",
+        "Access for free at openstax.org"
+      ]
+    }
+  ]
+}

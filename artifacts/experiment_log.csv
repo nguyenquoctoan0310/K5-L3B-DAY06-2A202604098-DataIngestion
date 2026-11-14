@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed-size character windows per page,500,50,"document_id, source, page, printed_page, chapter, chapter_title, section, char_start/char_end, content_hash",none,"intfloat/multilingual-e5-base @d1287505 (768d, local, query:/passage: prefixes, cosine, pgvector exact)",Baseline: fixed windows cut sentences/evidence -> lower Hit@1 and coherence than B,8/16,11/16,3/6,4/6,"454 chunks; selected by the pre-registered dev criterion (Hit@3). t21 miss: quote split at char 950 of p.321. Coherence 1.0/2"
+B,paragraph + heading boundaries per page,max 800 (+heading) / min 150,0,same as A,none,same as A,Paragraph/heading chunks keep evidence whole -> higher Hit@3 and coherence than A,7/16,9/16,4/6,6/6,"333 chunks; hypothesis rejected on dev (9 vs 11), supported on test (6 vs 4). Misses on dev: right page, wrong chunk (gold at rank 4-6). Coherence 1.9/2"
+C,same chunks as B (index B),max 800 (+heading) / min 150,0,same as A,"chapter (only for the 3 questions with a filter; others run as B)",same as A,Same chunks as B; chapter filter removes cross-chapter distractors on filter questions,7/16,10/16,4/6,6/6,"Only difference vs B = filter. q15 miss->hit (gold rank 6->3); q16 still miss (rank 10->5). Filter compliance dev 2/2, test 1/1 (A 0/2 & 1/1, B 0/2 & 0/1)"

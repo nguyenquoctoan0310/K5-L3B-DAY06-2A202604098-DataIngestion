@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audit Review</title>
+<style>
+:root {
+  --bg: #f6f7f9; --panel: #ffffff; --text: #1d2330; --muted: #5f6b7a; --border: #dde2e8;
+  --accent: #2f5bd3; --accent-soft: #e6edff; --ok: #1f8a4c; --ok-soft: #e3f4ea;
+  --warn: #b45309; --warn-soft: #fdf0dc; --bad: #c0392b; --bad-soft: #fbe5e2;
+  --hl: rgba(255, 196, 0, .38); --hl-border: rgba(214, 150, 0, .9); --code: #f1f3f6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12151b; --panel: #1b2029; --text: #e6e9ef; --muted: #9aa5b4; --border: #2c3340;
+    --accent: #7ea2ff; --accent-soft: #233257; --ok: #5fd08f; --ok-soft: #1c3527;
+    --warn: #f0b35a; --warn-soft: #3a2c16; --bad: #ff8a7a; --bad-soft: #3d1f1b;
+    --hl: rgba(255, 196, 0, .30); --hl-border: rgba(255, 196, 0, .8); --code: #232a35;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { position: sticky; top: 0; z-index: 5; background: var(--panel); border-bottom: 1px solid var(--border);
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 10px 16px; }
+header h1 { font-size: 16px; margin: 0 8px 0 0; }
+.tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+.tab { border: 1px solid var(--border); background: transparent; color: var(--text); padding: 6px 12px; border-radius: 8px; cursor: pointer; }
+.tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.tab .count { font-size: 12px; opacity: .85; margin-left: 4px; }
+.reviewer { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+input, select, textarea { font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; }
+main { display: grid; grid-template-columns: 220px minmax(0, 1fr) minmax(0, 1fr); gap: 12px; padding: 12px 16px; height: calc(100vh - 58px); }
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; overflow: auto; }
+#list { padding: 6px; }
+.item { display: flex; justify-content: space-between; gap: 6px; padding: 6px 8px; border-radius: 6px; cursor: pointer; font-family: ui-monospace, Consolas, monospace; font-size: 12.5px; }
+.item:hover { background: var(--accent-soft); }
+.item.active { background: var(--accent); color: #fff; }
+.dot { width: 9px; height: 9px; border-radius: 50%; flex: none; margin-top: 5px; background: var(--border); }
+.dot.done { background: var(--ok); }
+.dot.changed { background: var(--warn); }
+#detail { padding: 14px 16px; }
+#detail h2 { font-size: 15px; margin: 0 0 6px; }
+.meta { color: var(--muted); font-size: 12.5px; margin-bottom: 10px; }
+.box { background: var(--code); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; margin: 8px 0; white-space: pre-wrap; word-break: break-word; }
+.box.clickable { cursor: pointer; }
+.box.clickable:hover, .box.selected { outline: 2px solid var(--accent); }
+.label-small { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-top: 12px; }
+.scale { font-size: 12.5px; color: var(--muted); margin: 6px 0; }
+.controls { position: sticky; bottom: -14px; background: var(--panel); border-top: 1px solid var(--border); margin: 14px -16px -14px; padding: 12px 16px; }
+.btns { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.btn { border: 1px solid var(--border); background: var(--bg); color: var(--text); padding: 7px 14px; border-radius: 8px; cursor: pointer; font-weight: 600; }
+.btn.sel { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn:disabled { opacity: .5; cursor: default; }
+textarea { width: 100%; min-height: 54px; resize: vertical; }
+.notice { border-radius: 8px; padding: 8px 10px; margin: 8px 0; font-size: 13px; }
+.notice.ok { background: var(--ok-soft); color: var(--ok); }
+.notice.warn { background: var(--warn-soft); color: var(--warn); }
+.notice.bad { background: var(--bad-soft); color: var(--bad); }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
+.chip { font-size: 12px; padding: 2px 8px; border-radius: 99px; border: 1px solid var(--border); }
+.chip.ok { background: var(--ok-soft); color: var(--ok); border-color: transparent; }
+.chip.bad { background: var(--bad-soft); color: var(--bad); border-color: transparent; }
+#pdf { padding: 10px; }
+.pdfbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; font-size: 13px; }
+.pagewrap { position: relative; width: 100%; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; background: #fff; }
+.pagewrap img { display: block; width: 100%; }
+.hl { position: absolute; background: var(--hl); outline: 1px solid var(--hl-border); pointer-events: none; }
+.kbd { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; border: 1px solid var(--border); border-radius: 4px; padding: 0 4px; }
+.search-form { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.search-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.empty { color: var(--muted); padding: 20px; text-align: center; }
+@media (max-width: 1100px) {
+  main { grid-template-columns: 1fr; height: auto; }
+  #list { max-height: 220px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Audit Review</h1>
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-tab="coherence">Coherence <span class="count" id="c-coherence"></span></button>
+    <button class="tab" data-tab="grounding">Grounding <span class="count" id="c-grounding"></span></button>
+    <button class="tab" data-tab="metadata">Metadata <span class="count" id="c-metadata"></span></button>
+    <button class="tab" data-tab="search">Thử tìm kiếm</button>
+  </nav>
+  <div class="reviewer">
+    <label for="reviewer">Người chấm</label>
+    <input id="reviewer" placeholder="Họ tên" size="18">
+  </div>
+</header>
+<main>
+  <aside class="panel" id="list"></aside>
+  <section class="panel" id="detail"><div class="empty">Đang tải…</div></section>
+  <section class="panel" id="pdf"><div class="empty">Trang PDF sẽ hiện ở đây.</div></section>
+</main>
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const SCALES = {
+  coherence: ["0 = cắt giữa ý / thiếu chủ thể, không hiểu", "1 = hiểu một phần, thiếu ngữ cảnh", "2 = tự hiểu được, giữ trọn ý"],
+  grounding: ["0 = không có bằng chứng", "1 = có nhưng thiếu điều kiện / ngữ cảnh", "2 = đủ để trả lời và truy nguồn"],
+  metadata: ["0 = có trường sai (source / page / chapter / section / filter)", "1 = đủ và đúng"],
+};
+const KEYS = {coherence: ["position_id", "index"], grounding: ["strategy", "id"], metadata: ["strategy", "id", "rank"]};
+let state = {tab: "coherence", rows: {}, idx: 0, choice: null};
+
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+};
+$("#reviewer").value = store.get("reviewer") || "";
+$("#reviewer").addEventListener("input", e => store.set("reviewer", e.target.value));
+
+async function api(path, body) {
+  const res = await fetch(path, body ? {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)} : {});
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || res.status);
+  return data;
+}
+
+async function loadSheet(sheet) {
+  state.rows[sheet] = await api(`/api/rows?sheet=${sheet}`);
+  updateCounts();
+}
+function updateCounts() {
+  for (const s of ["coherence", "grounding", "metadata"]) {
+    const rows = state.rows[s];
+    if (rows) $(`#c-${s}`).textContent = `${rows.filter(r => r.reviewed).length}/${rows.length}`;
+  }
+}
+const keyOf = (sheet, r) => Object.fromEntries(KEYS[sheet].map(k => [k, r[k]]));
+const rowName = (sheet, r) => sheet === "coherence" ? `${r.position_id} ${r.index}` :
+  sheet === "grounding" ? `${r.strategy} ${r.id}` : `${r.strategy} ${r.id} #${r.rank}`;
+const pageOfChunk = id => parseInt((id.match(/:p(\d+):/) || [])[1]);
+
+function renderList() {
+  const sheet = state.tab, rows = state.rows[sheet] || [];
+  $("#list").innerHTML = rows.map((r, i) => {
+    const changed = r.reviewed && r.ai_label !== undefined && r.label !== r.ai_label;
+    return `<div class="item ${i === state.idx ? "active" : ""}" data-i="${i}">
+      <span>${esc(rowName(sheet, r))}</span><span class="dot ${r.reviewed ? (changed ? "changed" : "done") : ""}"></span></div>`;
+  }).join("");
+  $("#list").querySelectorAll(".item").forEach(el => el.onclick = () => select(+el.dataset.i));
+  const firstOpen = rows.findIndex(r => !r.reviewed);
+  if (firstOpen === -1 && rows.length) $("#list").insertAdjacentHTML("afterbegin", `<div class="notice ok">Đã duyệt hết ${rows.length} dòng.</div>`);
+}
+
+function select(i) {
+  const rows = state.rows[state.tab];
+  if (!rows || !rows.length) return;
+  state.idx = Math.max(0, Math.min(rows.length - 1, i));
+  state.choice = null;
+  renderList();
+  renderDetail();
+  $("#list .item.active")?.scrollIntoView({block: "nearest"});
+}
+
+function controlsHTML(sheet, r) {
+  const opts = sheet === "metadata" ? [["1", "Đúng (1)"], ["0", "Sai (0)"]] : [["0", "0"], ["1", "1"], ["2", "2"]];
+  const reveal = r.reviewed && sheet !== "metadata"
+    ? `<div class="notice ${r.label === r.ai_label ? "ok" : "warn"}">Nhãn của bạn: <b>${esc(r.label)}</b> · Nhãn AI: <b>${esc(r.ai_label)}</b> — ${esc(r.ai_reason || "")}</div>` : "";
+  const done = r.reviewed ? `<div class="meta">Đã lưu bởi: ${esc(r.labeled_by)}</div>` : "";
+  return `<div class="controls">
+    <div class="scale">${SCALES[sheet].map(esc).join(" · ")}</div>
+    ${reveal}
+    <div class="btns">${opts.map(([v, t]) => `<button class="btn ${state.choice === v || (state.choice === null && r.reviewed && r.label === v) ? "sel" : ""}" data-v="${v}">${t}</button>`).join("")}</div>
+    <textarea id="reason" placeholder="Lý do (bắt buộc nếu khác AI hoặc chọn Sai)">${esc(r.reviewed ? r.reason : "")}</textarea>
+    <div id="msg"></div>
+    <div class="btns" style="margin-top:8px">
+      <button class="btn primary" id="save">Lưu</button>
+      <button class="btn" id="prev">← Trước</button>
+      <button class="btn" id="next">Tiếp →</button>
+      <span class="meta" style="margin:6px 0 0 6px">Phím: <span class="kbd">0</span> <span class="kbd">1</span> <span class="kbd">2</span> chọn · <span class="kbd">Ctrl+Enter</span> lưu · <span class="kbd">j</span>/<span class="kbd">k</span> chuyển</span>
+    </div>${done}</div>`;
+}
+
+function renderDetail() {
+  const sheet = state.tab, r = state.rows[sheet][state.idx];
+  let html = "";
+  if (sheet === "coherence") {
+    html = `<h2>Vị trí ${esc(r.position_id)} · index ${esc(r.index)}</h2>
+      <div class="meta">Áp dụng cho: ${esc(r.applies_to)} · ${esc(r.chunk_id)} · ${esc(r.chunk_len)} ký tự</div>
+      <div class="label-small">Câu hỏi khi chấm: đọc riêng chunk này có hiểu không?</div>
+      <div class="label-small">Ngữ cảnh nguồn quanh vị trí</div><div class="box">…${esc(r.source_context)}…</div>
+      <div class="label-small">Chunk</div><div class="box">${esc(r.chunk_text)}</div>`;
+    showPage(pageOfChunk(r.chunk_id), r.chunk_text, `Chunk ${r.chunk_id}`);
+  } else if (sheet === "grounding") {
+    const tops = ["top1", "top2", "top3"].map(k => r[k] || "");
+    html = `<h2>${esc(r.strategy)} · ${esc(r.id)}</h2>
+      <div class="meta">Gold page ${esc(r.gold_page)} · filter ${esc(r.filter_applied || "—")}${r.reviewed ? ` · auto Evidence Hit@3 = ${esc(r.auto_evidence_hit_at_3)}` : ""}</div>
+      <div class="label-small">Câu hỏi khi chấm: chỉ với top-3 này, có đủ bằng chứng để trả lời và truy nguồn?</div>
+      <div class="label-small">Câu hỏi</div><div class="box">${esc(r.question)}</div>
+      <div class="label-small">Đáp án mong đợi</div><div class="box">${esc(r.expected_answer)}</div>
+      <div class="box clickable" id="gold">📄 Xem trang gold ${esc(r.gold_page)} với evidence được tô</div>
+      ${tops.map((t, i) => { const m = t.match(/^\[p(\d+) (\S+) s=([\d.]+)\] ([\s\S]*)$/) || [];
+        return `<div class="label-small">Top ${i + 1} · trang ${esc(m[1])} · ${esc(m[2])} · score ${esc(m[3])}</div>
+        <div class="box clickable" data-top="${i}">${esc(m[4] ?? t)}</div>`; }).join("")}`;
+  } else {
+    const chk = (k, t) => r[k] === "" ? "" : `<span class="chip ${String(r[k]).toLowerCase() === "true" ? "ok" : "bad"}">${t}: ${esc(r[k])}</span>`;
+    html = `<h2>${esc(r.strategy)} · ${esc(r.id)} · rank ${esc(r.rank)}</h2>
+      <div class="meta">${esc(r.chunk_id)}</div>
+      <div class="label-small">Đối chiếu với trang PDF bên phải</div>
+      <div class="box">source: ${esc(r.source)}
+page (PDF): ${esc(r.page)}   → kiểm tra số in ở header/footer = ${esc(r.printed_page)}
+chapter: ${esc(r.chapter)}
+section: ${esc(r.section)}
+filter áp dụng: ${esc(r.filter_applied || "—")}</div>
+      <div class="chips">${chk("auto_source_ok", "source")}${chk("auto_page_text_in_pdf_page", "text trên trang")}${chk("auto_chapter_ok", "chapter")}${chk("auto_section_ok", "section")}${chk("auto_filter_ok", "filter")}</div>
+      <div class="label-small">Chunk (được tô vàng trên trang PDF)</div><div class="box">${esc(r.chunk_text)}</div>`;
+    showPage(+r.page, r.chunk_text, `Trang ${r.page} · in số ${r.printed_page}`);
+  }
+  $("#detail").innerHTML = html + controlsHTML(sheet, r);
+  if (sheet === "grounding") {
+    const goldPage = parseInt(String(r.gold_page).replace(/\D+/g, " ").trim());
+    const showGold = () => { markSel($("#gold")); showPage(goldPage, r.evidence_quote, `Gold · trang ${goldPage}`); };
+    $("#gold").onclick = showGold;
+    $("#detail").querySelectorAll("[data-top]").forEach(el => el.onclick = () => {
+      const t = r[`top${+el.dataset.top + 1}`], m = t.match(/^\[p(\d+) (\S+) s=[\d.]+\] ([\s\S]*)$/);
+      markSel(el); showPage(+m[1], m[3], `Top ${+el.dataset.top + 1} · trang ${m[1]} · ${m[2]}`);
+    });
+    const first = $("#detail [data-top='0']"); first && first.click();
+  }
+  $("#detail").querySelectorAll(".btns .btn[data-v]").forEach(b => b.onclick = () => choose(b.dataset.v));
+  $("#save").onclick = save; $("#prev").onclick = () => select(state.idx - 1); $("#next").onclick = () => select(state.idx + 1);
+}
+function markSel(el) { $("#detail").querySelectorAll(".box.selected").forEach(x => x.classList.remove("selected")); el.classList.add("selected"); }
+function choose(v) {
+  state.choice = v;
+  $("#detail").querySelectorAll(".btns .btn[data-v]").forEach(b => b.classList.toggle("sel", b.dataset.v === v));
+}
+
+async function save() {
+  const sheet = state.tab, r = state.rows[sheet][state.idx];
+  const label = state.choice ?? (r.reviewed ? r.label : null);
+  const msg = $("#msg");
+  if (label === null) { msg.innerHTML = `<div class="notice warn">Chọn nhãn trước.</div>`; return; }
+  try {
+    const res = await api("/api/label", {sheet, key: keyOf(sheet, r), label, reason: $("#reason").value, reviewer: $("#reviewer").value});
+    if (res.need_reason) {
+      msg.innerHTML = `<div class="notice warn">${esc(res.message)}${res.ai_reason ? `<br>Lý do AI: ${esc(res.ai_reason)}` : ""}</div>`;
+      $("#reason").focus(); return;
+    }
+    state.rows[sheet][state.idx] = res.row;
+    updateCounts(); renderList(); renderDetail();
+    $("#msg").innerHTML = `<div class="notice ok">Đã lưu.</div>`;
+  } catch (e) { msg.innerHTML = `<div class="notice bad">${esc(e.message)}</div>`; }
+}
+
+let pageReq = 0;
+async function showPage(page, text, title) {
+  const my = ++pageReq;
+  $("#pdf").innerHTML = `<div class="pdfbar"><b>${esc(title)}</b><span class="meta" id="cov"></span></div>
+    <div class="pagewrap" id="pw"><img alt="PDF trang ${page}" src="/api/page.png?page=${page}"></div>`;
+  try {
+    const h = await api("/api/highlight", {page, text});
+    if (my !== pageReq) return;
+    $("#cov").textContent = `· tìm thấy ${Math.round(h.coverage * 100)}% chữ của đoạn trên trang này`;
+    $("#pw").insertAdjacentHTML("beforeend", h.rects.map(([x, y, w, hh]) =>
+      `<div class="hl" style="left:${x * 100}%;top:${y * 100}%;width:${w * 100}%;height:${hh * 100}%"></div>`).join(""));
+    const first = $("#pw .hl"); if (first) first.scrollIntoView({block: "center"});
+  } catch (e) { $("#cov").textContent = `· không tô được: ${e.message}`; }
+}
+
+function renderSearch() {
+  $("#list").innerHTML = `<div class="notice warn">Không gõ câu hỏi thuộc tập <b>test</b> (t17–t22): sẽ làm mất tính holdout. Công cụ sẽ cảnh báo nếu câu giống câu test.</div>`;
+  $("#detail").innerHTML = `<h2>Thử tìm kiếm trên index</h2>
+    <div class="search-form">
+      <input id="q" placeholder="Ví dụ: What is the function of the cochlea?">
+      <div class="search-row">
+        <select id="strategy"><option value="A">A · fixed 500/50</option><option value="B" selected>B · paragraph</option><option value="C">C · B + filter chapter</option></select>
+        <select id="chapter"><option value="">chapter: —</option><option value="6">chapter 6 · Vision</option><option value="7">chapter 7 · Hearing</option></select>
+        <select id="k"><option>3</option><option>5</option><option>10</option></select>
+        <button class="btn primary" id="go">Tìm</button>
+      </div>
+      <div class="meta">Lần đầu cần ~10 giây để nạp model. Cần Docker database đang chạy. Filter chương chỉ áp dụng với C.</div>
+    </div><div id="results"></div>`;
+  $("#pdf").innerHTML = `<div class="empty">Bấm vào một kết quả để xem vị trí trong PDF.</div>`;
+  const go = async () => {
+    const q = $("#q").value.trim(); if (!q) return;
+    $("#results").innerHTML = `<div class="meta">Đang tìm…</div>`;
+    try {
+      const p = new URLSearchParams({q, strategy: $("#strategy").value, chapter: $("#chapter").value, k: $("#k").value});
+      const res = await api(`/api/search?${p}`);
+      $("#results").innerHTML = (res.test_warning ? `<div class="notice bad">Câu này giống câu test <b>${esc(res.test_warning)}</b>. Đừng dùng kết quả để chỉnh pipeline; nếu đã xem, ghi lại vào benchmark/README.md.</div>` : "")
+        + `<div class="meta">index ${esc(res.index)} · filter ${esc(JSON.stringify(res.filter) || "—")}</div>`
+        + res.hits.map((h, i) => `<div class="label-small">#${i + 1} · score ${h.score} · trang ${h.page} (in ${esc(h.printed_page)}) · ch.${esc(h.chapter)} · ${esc(h.section)}</div>
+          <div class="box clickable" data-i="${i}">${esc(h.text)}</div>`).join("");
+      $("#results").querySelectorAll("[data-i]").forEach(el => el.onclick = () => {
+        const h = res.hits[+el.dataset.i]; markSel(el); showPage(h.page, h.text, `${h.chunk_id}`);
+      });
+    } catch (e) { $("#results").innerHTML = `<div class="notice bad">${esc(e.message)}</div>`; }
+  };
+  $("#go").onclick = go; $("#q").addEventListener("keydown", e => e.key === "Enter" && go());
+}
+
+async function openTab(tab) {
+  state.tab = tab; state.idx = 0; state.choice = null;
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.tab === tab));
+  if (tab === "search") return renderSearch();
+  if (!state.rows[tab]) await loadSheet(tab);
+  const rows = state.rows[tab];
+  const firstOpen = rows.findIndex(r => !r.reviewed);
+  select(firstOpen === -1 ? 0 : firstOpen);
+}
+document.querySelectorAll(".tab").forEach(t => t.onclick = () => openTab(t.dataset.tab));
+document.addEventListener("keydown", e => {
+  if (state.tab === "search") return;
+  const typing = ["TEXTAREA", "INPUT", "SELECT"].includes(document.activeElement?.tagName);
+  if (e.ctrlKey && e.key === "Enter") { e.preventDefault(); save(); return; }
+  if (typing) return;
+  if (["0", "1", "2"].includes(e.key) && !(state.tab === "metadata" && e.key === "2")) choose(e.key);
+  if (e.key === "j") select(state.idx + 1);
+  if (e.key === "k") select(state.idx - 1);
+});
+(async () => {
+  try { await Promise.all(["coherence", "grounding", "metadata"].map(loadSheet)); await openTab("coherence"); }
+  catch (e) { $("#detail").innerHTML = `<div class="notice bad">Không tải được dữ liệu: ${esc(e.message)}</div>`; }
+})();
+</script>
+</body>
+</html>

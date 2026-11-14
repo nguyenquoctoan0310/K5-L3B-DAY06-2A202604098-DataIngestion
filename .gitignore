@@ -8,3 +8,6 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+
+# Corpus PDF (CC BY-NC-SA, 250MB): download from openstax.org, see data/manifest.json
+starter/data/*.pdf
